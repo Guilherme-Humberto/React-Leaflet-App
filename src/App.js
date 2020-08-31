@@ -46,6 +46,7 @@ function App() {
   const [isLocation, setLocation] = useState(null)
   const [initialPosition, setInitialPosition] = useState([0, 0]);
 
+  // Pegando localização do usuário
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords;
